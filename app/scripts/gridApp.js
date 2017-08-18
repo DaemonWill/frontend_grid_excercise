@@ -44,7 +44,9 @@ gridApp.controller('gridCtrl', function($scope,$http,$q,$compile) {
     outerBoxDiv.appendChild(innerBoxDiv);
     //include random message
     var messagePromise = $scope.getMessage().then(function(message){
-      innerBoxDiv.appendChild(document.createTextNode(message)); //NOTE unitTest
+      var h3Element = document.createElement("h3") ;
+      h3Element.innerHTML = message;
+      innerBoxDiv.appendChild(h3Element); //NOTE unitTest
     });
     //innerBoxDiv.appendChild(document.createTextNode(message));
     return outerBoxDiv; //NOTE unitTest
