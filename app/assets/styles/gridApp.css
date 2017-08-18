@@ -1,0 +1,54 @@
+div.grid {
+  margin: 10px;
+  background-color: lightblue;
+  width: 980px;
+  max-width: 1620px;
+}
+
+div.outerBox {
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  max-height: 300px;
+  max-width: 300px;
+  text-align: center;
+  position: relative;
+  float: left;
+  background-color: lightgrey;
+}
+
+div.innerBox {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  height: 260px;
+  width: 260px;
+  text-align: center;
+  background-color: lightgrey;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+button.addBoxBtn {
+  background-color: seagreen;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+button.destroy {
+  font-size: 15px;
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: center;
+  background-color: red;
+  border: 0px;
+  color: white;
+  cursor: pointer;
+}
