@@ -1,6 +1,6 @@
 var gridApp = angular.module('gridApp', []);
 
-gridApp.controller('gridCtrl', function($scope,$http,$q) {
+gridApp.controller('gridCtrl', function($scope,$http,$q,$compile) {
   /*
  *returns a random message from a restful service
  *the service responds with a json containing an id, title, and body;
@@ -39,6 +39,7 @@ gridApp.controller('gridCtrl', function($scope,$http,$q) {
     destroyButton.setAttribute("class","destroy");
     destroyButton.setAttribute("ng-click","destroyBox($event)");
     destroyButton.appendChild(document.createTextNode("X"));
+    $compile(destroyButton)($scope);
     outerBoxDiv.appendChild(destroyButton);
     outerBoxDiv.appendChild(innerBoxDiv);
     //include random message
