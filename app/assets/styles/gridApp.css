@@ -13,8 +13,9 @@ body{
   margin: 0px auto;
 }
 div.grid{
-  margin: 0px 10px;
-  width: 980px;
+  margin: 0px;
+  width: 960px;
+  padding: 10px 10px;
 }
 
 /*Screen size allows for a max of 4 boxes horizontally to show in grid*/
@@ -24,9 +25,10 @@ div.grid{
     margin: 0px auto;
   }
   div.grid {
-    margin: 0px 10px;
-    width: 1300px;
-    max-width: 1300px;
+    margin: 0px;
+    width: 1280px;
+    max-width: 1280px;
+    padding: 10px 10px;
   }
 }
 
@@ -37,9 +39,10 @@ div.grid{
     margin: 0px auto;
   }
   div.grid {
-    margin: 0px 10px;
-    width: 1620px;
-    max-width: 1620px;
+    margin: 0px;
+    width: 1600px;
+    max-width: 1600px;
+    padding: 10px 10px;
   }
 }
 
